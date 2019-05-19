@@ -38,7 +38,7 @@ GET /product/list
             "foods": [
                 {
                     "id": "123457",
-                    "name": "慕斯蛋糕",
+                    "name": "蛋糕",
                     "price": 10.9,
                     "description": "美味爽口",
                     "icon": "http://xxx.com",
