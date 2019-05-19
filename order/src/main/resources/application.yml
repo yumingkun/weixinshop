@@ -1,9 +1,9 @@
 server:
-  port: 8000
+  port: 9000
 
 spring:
   application:
-    name: product
+    name: order
   jpa:
     show-sql: true
   datasource:
