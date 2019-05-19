@@ -1,8 +1,15 @@
 package com.fish.demo.controller;
 
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 /**
  * Created by mingkunyu on 2019-05-19
  */
+
+@RestController
+@RequestMapping("/order")
 public class OrderController {
     /**
      * 1:参数校验
@@ -11,6 +18,7 @@ public class OrderController {
      * 4：扣库存
      * 5：订单入库
      */
+
 
 
 }
