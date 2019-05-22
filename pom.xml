@@ -6,7 +6,11 @@
 
     <groupId>fishshop</groupId>
     <artifactId>fishshop</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>fish-product</module>
+    </modules>
 
 
 </project>

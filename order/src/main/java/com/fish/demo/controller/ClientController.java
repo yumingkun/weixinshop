@@ -1,6 +1,7 @@
 package com.fish.demo.controller;
 
 import com.fish.demo.client.ProductClient;
+import com.fish.demo.dto.CartDTD;
 import com.fish.demo.entity.ProductInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,5 +35,10 @@ public class ClientController {
     public String getProductList(){
        List<ProductInfo> productInfoList= productClient.listForOrder(Arrays.asList("157875196366160022"));
        return productInfoList.toString();
+    }
+    @GetMapping("/productDecreaseStock")
+    public  String  productDecreaseStock(){
+        productClient.decreaseStock(Arrays.asList(new CartDTD("164103465734242707",3)));
+        return "ok";
     }
 }

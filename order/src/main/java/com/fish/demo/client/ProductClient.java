@@ -1,5 +1,6 @@
 package com.fish.demo.client;
 
+import com.fish.demo.dto.CartDTD;
 import com.fish.demo.entity.ProductInfo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,4 +20,9 @@ public interface ProductClient {
 
     @PostMapping("/product/listForOrder")
     List<ProductInfo> listForOrder(@RequestBody List<String> productIdList);
+
+    @PostMapping("/product/decreaseStock")
+    void decreaseStock(@RequestBody List<CartDTD> cartDTDList);
+
+
 }
