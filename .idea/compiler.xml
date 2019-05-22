@@ -9,9 +9,11 @@
         <module name="fish-product-client" />
         <module name="eureka-server" />
         <module name="the-product-common" />
-        <module name="order" />
+        <module name="fish-order-server" />
         <module name="fish-product-common" />
+        <module name="fish-order-client" />
         <module name="product-common" />
+        <module name="fish-order-common" />
         <module name="fish-product-server" />
       </profile>
     </annotationProcessing>
@@ -26,6 +28,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="fish-order-client" options="-parameters" />
+      <module name="fish-order-common" options="-parameters" />
+      <module name="fish-order-server" options="-parameters" />
       <module name="fish-product-client" options="-parameters" />
       <module name="fish-product-common" options="-parameters" />
       <module name="fish-product-server" options="-parameters" />
