@@ -19,6 +19,7 @@ eureka:
       defaultZone: http://127.0.0.1:7000/eureka/
 
 
+
 RRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule  #随机

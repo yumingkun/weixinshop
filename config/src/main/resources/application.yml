@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/yumingkun/SpringCloudShopConfig
+          username: yumingkun
+          password: 630823ymk
+
+
+
+server:
+  port: 10000
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka/
+
