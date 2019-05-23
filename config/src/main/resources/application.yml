@@ -7,8 +7,13 @@ spring:
         git:
           uri: https://gitee.com/yumingkun/SpringCloudShopConfig
           username: yumingkun
-          password:
+          password: 630823ymk
           basedir: /Users/mingkunyu/Desktop/config/basebir
+  rabbitmq:
+    addresses: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 
 
@@ -25,4 +30,12 @@ eureka:
 
 
 
+
+
+#用post 访问 http://localhost:10000/actuator/bus-refresh 可实现刷新配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' #暴露全部路径
 
