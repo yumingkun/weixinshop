@@ -7,7 +7,8 @@ spring:
         git:
           uri: https://gitee.com/yumingkun/SpringCloudShopConfig
           username: yumingkun
-          password: 630823ymk
+          password:
+          basedir: /Users/mingkunyu/Desktop/config/basebir
 
 
 
@@ -19,4 +20,9 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:7000/eureka/
+
+
+
+
+
 

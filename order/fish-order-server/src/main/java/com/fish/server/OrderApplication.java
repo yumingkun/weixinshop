@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.fish.server.client")
 public class OrderApplication {
 
     public static void main(String[] args) {
