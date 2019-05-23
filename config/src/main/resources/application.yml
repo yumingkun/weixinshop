@@ -31,7 +31,6 @@ eureka:
 
 
 
-
 #用post 访问 http://localhost:10000/actuator/bus-refresh 可实现刷新配置
 management:
   endpoints:
