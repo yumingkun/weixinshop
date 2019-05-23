@@ -7,7 +7,7 @@ spring:
         git:
           uri: https://gitee.com/yumingkun/SpringCloudShopConfig
           username: yumingkun
-          password: 630823ymk
+          password:
           basedir: /Users/mingkunyu/Desktop/config/basebir
   rabbitmq:
     addresses: 127.0.0.1
