@@ -4,20 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-order/fish-order.iml" filepath="$PROJECT_DIR$/fish-order/fish-order.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-order/fish-order-client/fish-order-client.iml" filepath="$PROJECT_DIR$/fish-order/fish-order-client/fish-order-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-order/fish-order-common/fish-order-common.iml" filepath="$PROJECT_DIR$/fish-order/fish-order-common/fish-order-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-order/fish-order-server/fish-order-server.iml" filepath="$PROJECT_DIR$/fish-order/fish-order-server/fish-order-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product.iml" filepath="$PROJECT_DIR$/fish-product/fish-product.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product-client/fish-product-client.iml" filepath="$PROJECT_DIR$/fish-product/fish-product-client/fish-product-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product-common/fish-product-common.iml" filepath="$PROJECT_DIR$/fish-product/fish-product-common/fish-product-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product-server/fish-product-server.iml" filepath="$PROJECT_DIR$/fish-product/fish-product-server/fish-product-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-user/fish-user.iml" filepath="$PROJECT_DIR$/fish-user/fish-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/fish-order/order.iml" filepath="$PROJECT_DIR$/fish-order/order.iml" />
       <module fileurl="file://$PROJECT_DIR$/productcc/product.iml" filepath="$PROJECT_DIR$/productcc/product.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-user/user-client/user-client.iml" filepath="$PROJECT_DIR$/fish-user/user-client/user-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-user/user-common/user-common.iml" filepath="$PROJECT_DIR$/fish-user/user-common/user-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/fish-user/user-server/user-server.iml" filepath="$PROJECT_DIR$/fish-user/user-server/user-server.iml" />
     </modules>
   </component>
 </project>

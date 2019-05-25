@@ -12,7 +12,6 @@
         <module name="fish-product-server" />
         <module name="fish-product-client" />
         <module name="product-common" />
-        <module name="fish-product-common" />
         <module name="zuul" />
         <module name="fish-order-server" />
         <module name="user-server" />
@@ -20,23 +19,20 @@
         <module name="eureka" />
         <module name="config" />
         <module name="api-gateway" />
-        <module name="fish-order-client" />
         <module name="user-client" />
+        <module name="fish-product-common" />
+      </profile>
+      <profile name="Annotation profile for fishshop" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="fish-order-common" />
+        <module name="fish-order-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="eureka-server" target="1.8" />
-      <module name="fish-order" target="1.8" />
-      <module name="fish-order-client" target="1.8" />
-      <module name="fish-order-common" target="1.8" />
-      <module name="fish-order-server" target="1.8" />
-      <module name="fish-product" target="1.8" />
-      <module name="fish-product-client" target="1.8" />
-      <module name="fish-product-common" target="1.8" />
-      <module name="fish-product-server" target="1.8" />
-      <module name="fish-user" target="1.8" />
       <module name="order" target="1.8" />
       <module name="product" target="1.8" />
       <module name="product-common" target="1.8" />
@@ -44,9 +40,6 @@
       <module name="shop-product" target="1.8" />
       <module name="the-product" target="1.8" />
       <module name="the-product-common" target="1.8" />
-      <module name="user-client" target="1.8" />
-      <module name="user-common" target="1.8" />
-      <module name="user-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
