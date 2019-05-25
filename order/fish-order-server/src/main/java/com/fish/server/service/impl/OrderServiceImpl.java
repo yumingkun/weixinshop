@@ -6,7 +6,6 @@ import com.fish.server.dto.CartDTD;
 import com.fish.server.dto.OrderDTO;
 import com.fish.server.entity.OrderDetail;
 import com.fish.server.entity.OrderMaster;
-import com.fish.server.entity.ProductInfo;
 import com.fish.server.enums.OrderStatusEnum;
 import com.fish.server.enums.PayStatusEnum;
 import com.fish.server.repository.OrderDetailRepository;

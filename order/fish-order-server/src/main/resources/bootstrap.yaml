@@ -15,6 +15,7 @@ spring:
         myMessage:
           group: order #把实例划分到一个组里，只有一个实例消费消息
           content-type: application/json #显示格式
+
 eureka:
   client:
     service-url:

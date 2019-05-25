@@ -1,5 +1,6 @@
 package com.fish.server.service;
 
+import com.fish.common.DecreaseStockInput;
 import com.fish.server.dtd.CartDTD;
 import com.fish.server.entity.ProductInfo;
 
@@ -31,8 +32,8 @@ public interface ProductService {
     /**
      * 扣库存
      *
-     * @param cartDTDList
+     * @param decreaseStockInputList
      */
-    void decreaseStock(List<CartDTD> cartDTDList);
+    void decreaseStock(List<DecreaseStockInput> decreaseStockInputList);
 
 }

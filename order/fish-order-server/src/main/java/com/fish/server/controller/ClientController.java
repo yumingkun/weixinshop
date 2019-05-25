@@ -3,7 +3,6 @@ package com.fish.server.controller;
 
 import com.fish.server.client.ProductClient;
 import com.fish.server.dto.CartDTD;
-import com.fish.server.entity.ProductInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
