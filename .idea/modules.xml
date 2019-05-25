@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product.iml" filepath="$PROJECT_DIR$/fish-product/fish-product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product-client/fish-product-client.iml" filepath="$PROJECT_DIR$/fish-product/fish-product-client/fish-product-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product-common/fish-product-common.iml" filepath="$PROJECT_DIR$/fish-product/fish-product-common/fish-product-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fish-product/fish-product-server/fish-product-server.iml" filepath="$PROJECT_DIR$/fish-product/fish-product-server/fish-product-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fish-order/order.iml" filepath="$PROJECT_DIR$/fish-order/order.iml" />
       <module fileurl="file://$PROJECT_DIR$/productcc/product.iml" filepath="$PROJECT_DIR$/productcc/product.iml" />
     </modules>
   </component>

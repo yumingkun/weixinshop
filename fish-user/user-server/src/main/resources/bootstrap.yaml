@@ -1,0 +1,16 @@
+#-----------------------分布式配置中心------------------
+spring:
+  application:
+    name: user
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG #配置中心在注册中心上的Application名字
+      profile: dev
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka/
+

@@ -7,22 +7,45 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fish-product-client" />
-        <module name="eureka-server" />
+        <module name="user-common" />
         <module name="the-product-common" />
-        <module name="fish-order-server" />
-        <module name="fish-product-common" />
-        <module name="fish-order-client" />
-        <module name="product-common" />
-        <module name="api-gateway" />
         <module name="fish-product-server" />
-        <module name="fish-order-common" />
+        <module name="fish-product-client" />
+        <module name="product-common" />
+        <module name="fish-product-common" />
+        <module name="zuul" />
+        <module name="fish-order-server" />
+        <module name="user-server" />
+        <module name="eureka-server" />
+        <module name="eureka" />
         <module name="config" />
+        <module name="api-gateway" />
+        <module name="user-client" />
+      </profile>
+      <profile name="Annotation profile for fish-order-common" enabled="true">
+        <sourceOutputDir name="../../order/fish-order-common/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../order/fish-order-common/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fish-order-common" />
+      </profile>
+      <profile name="Annotation profile for demo" enabled="true">
+        <sourceOutputDir name="../../order/fish-order-client/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../order/fish-order-client/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fish-order-client" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="fish-product" target="1.8" />
+      <module name="fish-product-client" target="1.8" />
+      <module name="fish-product-common" target="1.8" />
+      <module name="fish-product-server" target="1.8" />
+      <module name="order" target="1.8" />
       <module name="product" target="1.8" />
       <module name="product-common" target="1.8" />
+      <module name="server" target="1.8" />
       <module name="shop-product" target="1.8" />
       <module name="the-product" target="1.8" />
       <module name="the-product-common" target="1.8" />
@@ -32,6 +55,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api-gateway" options="-parameters" />
       <module name="config" options="-parameters" />
+      <module name="eureka" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="fish-order-client" options="-parameters" />
       <module name="fish-order-common" options="-parameters" />
@@ -39,12 +63,18 @@
       <module name="fish-product-client" options="-parameters" />
       <module name="fish-product-common" options="-parameters" />
       <module name="fish-product-server" options="-parameters" />
+      <module name="fish-user" options="-parameters" />
       <module name="order" options="-parameters" />
       <module name="product" options="-parameters" />
       <module name="product-common" options="-parameters" />
+      <module name="server" options="-parameters" />
       <module name="shop-product" options="-parameters" />
       <module name="the-product" options="-parameters" />
       <module name="the-product-common" options="-parameters" />
+      <module name="user-client" options="-parameters" />
+      <module name="user-common" options="-parameters" />
+      <module name="user-server" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>
