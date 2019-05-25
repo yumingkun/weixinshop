@@ -1,5 +1,6 @@
 package com.fish.server.controller;
 
+import com.fish.common.DecreaseStockInput;
 import com.fish.server.dtd.CartDTD;
 import com.fish.server.entity.ProductCategory;
 import com.fish.server.entity.ProductInfo;
@@ -91,7 +92,7 @@ public class ProductController {
 
 
     @PostMapping("/decreaseStock")
-    public void decreaseStock(@RequestBody List<CartDTD> cartDTDList) {
-        productService.decreaseStock(cartDTDList);
+    public void decreaseStock(@RequestBody List<DecreaseStockInput> decreaseStockInputList) {
+        productService.decreaseStock(decreaseStockInputList);
     }
 }

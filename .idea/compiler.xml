@@ -14,10 +14,10 @@
         <module name="fish-product-common" />
         <module name="fish-order-client" />
         <module name="product-common" />
+        <module name="api-gateway" />
         <module name="fish-product-server" />
         <module name="fish-order-common" />
         <module name="config" />
-        <module name="shop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="fish-order-client" options="-parameters" />
@@ -41,7 +42,6 @@
       <module name="order" options="-parameters" />
       <module name="product" options="-parameters" />
       <module name="product-common" options="-parameters" />
-      <module name="shop" options="-parameters" />
       <module name="shop-product" options="-parameters" />
       <module name="the-product" options="-parameters" />
       <module name="the-product-common" options="-parameters" />
