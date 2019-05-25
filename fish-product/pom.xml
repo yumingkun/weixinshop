@@ -11,8 +11,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>fish-product</artifactId>
+    <groupId>product</groupId>
     <version>0.0.1-SNAPSHOT</version>
-    <groupId>fishshop</groupId>
 
     <packaging>pom</packaging>
     <modules>

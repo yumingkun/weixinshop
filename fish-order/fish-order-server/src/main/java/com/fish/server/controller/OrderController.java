@@ -15,6 +15,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
@@ -60,6 +61,18 @@ public class OrderController {
         map.put("orderId", result.getOrderId());
         return ResultVOUtil.success(map);
     }
+
+
+    /**
+     * 完结订单
+     * @param orderId
+     * @return
+     */
+    @PostMapping("/finish")
+    public  ResultVO<OrderDTO> finish(@RequestParam("orderId") String orderId){
+        return ResultVOUtil.success(orderService.finish(orderId));
+    }
+
 
 
 }
