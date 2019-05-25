@@ -8,6 +8,13 @@ spring:
         enabled: true
         service-id: CONFIG #配置中心在注册中心上的Application名字
       profile: dev
+
+
+    stream:
+      binders:
+        myMessage:
+          group: order #把实例划分到一个组里，只有一个实例消费消息
+          content-type: application/json #显示格式
 eureka:
   client:
     service-url:
