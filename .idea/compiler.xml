@@ -12,6 +12,7 @@
         <module name="fish-product-server" />
         <module name="fish-product-client" />
         <module name="product-common" />
+        <module name="fish-product-common" />
         <module name="zuul" />
         <module name="fish-order-server" />
         <module name="user-server" />
@@ -19,15 +20,9 @@
         <module name="eureka" />
         <module name="config" />
         <module name="api-gateway" />
-        <module name="user-client" />
-        <module name="fish-product-common" />
-      </profile>
-      <profile name="Annotation profile for fishshop" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="fish-order-common" />
         <module name="fish-order-client" />
+        <module name="user-client" />
+        <module name="fish-order-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

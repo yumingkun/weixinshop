@@ -4,15 +4,38 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>fish-product</artifactId>
-        <groupId>fishshop</groupId>
+        <groupId>product</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>produc-servert</groupId>
     <artifactId>fish-product-server</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
 
     <dependencies>
+
+<!--        包含sleuth-zipkin和starter-sleuth-->
+<!--         https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-zipkin-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>
+
+<!--&lt;!&ndash;        链路，页面管理&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-sleuth-zipkin</artifactId>-->
+<!--        </dependency>-->
+
+<!--&lt;!&ndash;        链路跟踪&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-starter-sleuth</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
@@ -66,8 +89,16 @@
         </dependency>
 
         <dependency>
-            <groupId>fishshop</groupId>
+            <groupId>product-common</groupId>
             <artifactId>fish-product-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.1.5.RELEASE</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

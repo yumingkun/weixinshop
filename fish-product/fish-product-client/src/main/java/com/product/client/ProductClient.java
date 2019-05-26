@@ -1,4 +1,4 @@
-package com.fish.client;
+package com.product.client;
 
 
 import com.fish.common.DecreaseStockInput;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by mingkunyu on 2019-05-19
  */
-@FeignClient(name = "product")
+@FeignClient(name = "product",fallback = ProductClientFallback.class)
 public interface ProductClient {
 
     @PostMapping("/product/listForOrder")
@@ -22,4 +22,5 @@ public interface ProductClient {
 
     @PostMapping("/product/decreaseStock")
     void decreaseStock(@RequestBody List<DecreaseStockInput> decreaseStockInputList);
+
 }

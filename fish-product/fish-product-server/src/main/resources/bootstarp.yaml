@@ -13,3 +13,10 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:7000/eureka/
+
+
+
+logging:
+  level:
+    org.springframework.cloud.netflix.fegin: debug  #用于sleuth链路跟踪
+

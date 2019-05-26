@@ -15,12 +15,37 @@ spring:
         myMessage:
           group: order #把实例划分到一个组里，只有一个实例消费消息
           content-type: application/json #显示格式
+  zipkin:
+    base-url: http://loaclhost:9411/
+
+  sleuth:
+    sampler:
+      probability: 1 #链路表示全部采集
 
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:7000/eureka/
 
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000
+
+
+feign:
+  hystrix:
+    enabled: true
+
+
+
+logging:
+  level:
+    org.springframework.cloud.netflix.fegin: debug  #用于sleuth链路跟踪
 
 
   #server:
@@ -48,7 +73,6 @@ eureka:
   #RRODUCT:
   #  ribbon:
   #    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule  #随机
-
 
 
 
